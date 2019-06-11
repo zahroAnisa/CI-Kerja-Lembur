@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard | KLTime - Admin KLTime Jayapura</title>
+    <title>Add Task | KLTime - Admin KLTime Jayapura</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
                                                     <!-- FAVICON -->
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
                                                     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.min.css') ?>">
-                                                    <!-- Bootstrap CSS FONT -->
+                                                    <!-- FONT AWESOME CSS -->
     <link rel="stylesheet" href="<?php echo base_url('css/font-awesome.min.css') ?>">
                                                     <!-- OWL.CAROUSEL CSS -->
     <link rel="stylesheet" href="<?php echo base_url('css/owl.carousel.css') ?>">
@@ -27,12 +27,17 @@
     <link rel="stylesheet" href="<?php echo base_url('css/normalize.css') ?>">
                                                     <!-- MCUSTOMERSCROLLBAR CSS -->
     <link rel="stylesheet" href="<?php echo base_url('css/scrollbar/jquery.mCustomScrollbar.min.css') ?>">
-                                                    <!-- JVECTOR MAP CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/jvectormap/jquery-jvectormap-2.0.3.css') ?>">
                                                     <!-- NOTIKA ICON CSS -->
     <link rel="stylesheet" href="<?php echo base_url('css/notika-custom-icon.css') ?>">
+                                                    <!-- BOOTSTRAP SELECT CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/bootstrap-select/bootstrap-select.css') ?>">
+                                                    <!-- DATEPICKER CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/datapicker/datepicker3.css') ?>">
+                                                    <!-- DROPZONE CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/dropzone/dropzone.css') ?>">
                                                     <!-- WAVE CSS -->
     <link rel="stylesheet" href="<?php echo base_url('css/wave/waves.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('css/wave/button.css') ?>">
                                                     <!-- MAIN CSS -->
     <link rel="stylesheet" href="<?php echo base_url('css/main.css') ?>">
                                                     <!-- STYLE CSS -->
@@ -44,10 +49,11 @@
 </head>
 
 <body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-                                                <!-- START HEADER -->
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- START HEADER -->
 <div class="header-top-area">
     <div class="container">
         <div class="row">
@@ -92,26 +98,25 @@
                         <!-- START SETTING -->
                         <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-menu"></i></span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span>2</span></div></a>
                             <div role="menu" class="dropdown-menu message-dd chat-dd animated zoomIn">
-                                <div class="hd-mg-tt">
-                                    <h2>Account</h2>
-                                </div>
+                                
                                 <div align="center">
                                         <img src="img/post/2.jpg" alt="" />
                                 </div>
+                                    <hr>
                                     <a href="#">
                                         <div class="hd-message-sn">
-                                            <div class="hd-message-img chat-img">
-                                                <i class="notika-icon notika-left-arrow"></i>
+                                            <div style="padding-right: 20px;">
+                                                <i class="notika-icon notika-edit"></i>
                                             </div>
                                             <div class="hd-mg-ctn">
-                                                <h3>Edit Profile</h3>
+                                                <h3>Edit Account</h3>
                                             </div>
                                         </div>
                                     </a>
                                     <a href="#">
                                         <div class="hd-message-sn">
-                                            <div class="hd-message-img chat-img">
-                                                <i class="notika-icon notika-left-arrow"></i>
+                                            <div style="padding-right: 20px;">
+                                                <i class="notika-icon notika-alarm"></i>
                                             </div>
                                             <div class="hd-mg-ctn">
                                                 <h3>Logout</h3>
@@ -128,7 +133,6 @@
     </div>
 </div>
                                                 <!-- END HEADER-->
-
                                                 <!-- START MENU MOBILE -->
 <div class="mobile-menu-area">
     <div class="container">
@@ -165,8 +169,7 @@
     </div>
 </div>
                                                 <!-- END MENU MOBILE -->
-
-                                                <!-- START MENU WEB-->
+    <!-- START MENU WEB-->
                                                 <!-- TAB MENU START-->
 <div class="main-menu-area mg-tb-40">
     <div class="container">
@@ -183,7 +186,7 @@
                     </li>
                     <!-- END TAB USER -->
                     <!-- START TAB TASK -->
-                    <li><a data-toggle="tab" href="#TASK"><i class="notika-icon notika-form"></i> Task</a>
+                    <li><a data-toggle="tab" href="#Task"><i class="notika-icon notika-form"></i> Task</a>
                     </li>
                     <!-- END TAB TASK -->
                 </ul>
@@ -217,52 +220,43 @@
                                                 <!-- TAB MENU END-->
 
                                                 <!-- START INDEX HOME -->
-<div class="notika-status-area">
-    <div class="container">
-        <div class="row">
-            <!-- START CARD SUMMARY -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2><span class="counter">50,000</span></h2>
-                        <p>Total Website Traffics</p>
+    <div class="dropzone-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="dropdone-nk mg-t-30">
+                        <div class="cmp-tb-hd">
+                            <h2>Drag and Drop File Uploader</h2>
+                            <p>DropzoneJS is an open source library that provides Drag and Drop file uploads with image previews. It’s lightweight, doesn't depend on any other library (like jQuery) and is highly customizable.</p>
+                        </div>
+                        <div id="dropzone1" class="multi-uploader-cs">
+                            <form action="/upload" class="dropzone dropzone-nk needsclick" id="demo1-upload">
+                                <div class="dz-message needsclick download-custom">
+                                    <i class="notika-icon notika-cloud"></i>
+                                    <h2>Drop files here or click to upload.</h2>
+                                    <p><span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                        <!--START BUTTON -->
+                        <div align="right" class="form-example-int mg-t-15">
+                            <!-- START BUTTON SAVE -->
+                            <button class="btn btn-primary notika-btn-success">
+                                <i class="notika-icon notika-success"></i> Save</button>
+                            <!-- END BUTTON SAVE -->
+                            <!-- START BUTTON SEND -->
+                            <button class="btn btn-success notika-btn-success">
+                                <i class="notika-icon notika-sent"></i> Send</button>
+                            <!-- END BUTTON SEND -->
+                        </div>
+                        <!--END BUTTON -->
                     </div>
-                    <div class="sparkline-bar-stats1">9,4,8,6,5,6,4,8,3,5,9,5</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2><span class="counter">90,000</span>k</h2>
-                        <p>Website Impressions</p>
-                    </div>
-                    <div class="sparkline-bar-stats2">1,4,8,3,5,6,4,8,3,3,9,5</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2>$<span class="counter">40,000</span></h2>
-                        <p>Total Online Sales</p>
-                    </div>
-                    <div class="sparkline-bar-stats3">4,2,8,2,5,6,3,8,3,5,9,5</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2><span class="counter">1,000</span></h2>
-                        <p>Total Support Tickets</p>
-                    </div>
-                    <div class="sparkline-bar-stats4">2,4,8,4,5,7,4,7,3,5,7,5</div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Status area-->
-                                                <!-- END INDEX HOME -->
-
+                                                <!-- START INDEX HOME -->                                                
                                                 <!-- START FOOTER -->
 <div class="footer-copyright-area">
     <div class="container">
@@ -282,53 +276,76 @@
 <script src="<?php echo base_url('js/vendor/jquery-1.12.4.min.js') ?>"></script>
                                                 <!-- BOOTSTRAP JS -->
 <script src="<?php echo base_url('js/bootstrap.min.js') ?>"></script>
-                                                <!-- WOW JS -->
-<script src="<?php echo base_url('js/wow.min.js') ?>"></script>
-                                                <!-- PRICE-SLIDER JS -->
-<script src="<?php echo base_url('js/jquery-price-slider.js') ?>"></script>
-                                                <!-- OWL.CAROUSEL JS -->
-<script src="<?php echo base_url('js/owl.carousel.min.js') ?>"></script>
-                                                <!-- SCROLLUP JS -->
-<script src="<?php echo base_url('js/jquery.scrollUp.min.js') ?>"></script>
-                                                <!-- MEANMENU JS -->
-<script src="<?php echo base_url('js/meanmenu/jquery.meanmenu.js') ?>"></script>
-                                                <!-- COUNTERUP JS -->
-<script src="<?php echo base_url('js/counterup/jquery.counterup.min.js') ?>"></script>
-<script src="<?php echo base_url('js/counterup/waypoints.min.js') ?>"></script>
-<script src="<?php echo base_url('js/counterup/counterup-active.js') ?>"></script>
-                                                <!-- MCUSTOMSCROLLBAR JS -->
-<script src="<?php echo base_url('js/scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
-                                                <!-- JVECTORMAP JS -->
-<script src="<?php echo base_url('js/jvectormap/jquery-jvectormap-2.0.2.min.js') ?>"></script>
-<script src="<?php echo base_url('js/jvectormap/jquery-jvectormap-world-mill-en.js') ?>"></script>
-<script src="<?php echo base_url('js/jvectormap/jvectormap-active.js') ?>"></script>
-                                                <!-- SPARKLINE JS -->
-<script src="<?php echo base_url('js/sparkline/jquery.sparkline.min.js') ?>"></script>
-<script src="<?php echo base_url('js/sparkline/sparkline-active.js') ?>"></script>
-                                                <!-- FLOT JS -->
-<script src="<?php echo base_url('js/flot/jquery.flot.js') ?>"></script>
-<script src="<?php echo base_url('js/flot/jquery.flot.resize.js') ?>"></script>
-<script src="<?php echo base_url('js/flot/curvedLines.js') ?>"></script>
-<script src="<?php echo base_url('js/flot/flot-active.js') ?>"></script>
-                                                <!-- KNOB JS -->
-<script src="<?php echo base_url('js/knob/jquery.knob.js') ?>"></script>
-<script src="<?php echo base_url('js/knob/jquery.appear.js') ?>"></script>
-<script src="<?php echo base_url('js/knob/knob-active.js') ?>"></script>
-                                                <!--  WAVE JS -->
-<script src="<?php echo base_url('js/wave/waves.min.js') ?>"></script>
-<script src="<?php echo base_url('js/wave/wave-active.js') ?>"></script>
-                                                <!--  TODO JS -->
-<script src="<?php echo base_url('js/todo/jquery.todo.js') ?>"></script>
-                                                <!-- PLUGINS JS -->
-<script src="<?php echo base_url('js/plugins.js') ?>"></script>
-                                                <!--  CHAT JS -->
-<script src="<?php echo base_url('js/chat/moment.min.js') ?>"></script>
-<script src="<?php echo base_url('js/chat/jquery.chat.js') ?>"></script>
-                                                <!-- MAIN JS -->
-<script src="<?php echo base_url('js/main.js') ?>"></script>
-                                                <!-- TAWK CHAT JS -->
-<script src="<?php echo base_url('js/tawk-chat.js') ?>"></script>
-                                                <!-- END JQUERY -->
+    <script src="<?php echo base_url('js/vendor/jquery-1.12.4.min.js') ?>"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="<?php echo base_url('js/wow.min.js') ?>"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="<?php echo base_url('js/jquery-price-slider.js') ?>"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="<?php echo base_url('js/owl.carousel.min.js') ?>"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="<?php echo base_url('js/jquery.scrollUp.min.js') ?>"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="<?php echo base_url('js/meanmenu/jquery.meanmenu.js') ?>"></script>
+    <!-- counterup JS
+		============================================ -->
+    <script src="<?php echo base_url('js/counterup/jquery.counterup.min.js') ?>"></script>
+    <script src="<?php echo base_url('js/counterup/waypoints.min.js') ?>"></script>
+    <script src="<?php echo base_url('js/counterup/counterup-active.js') ?>"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="<?php echo base_url('js/scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
+    <!-- sparkline JS
+		============================================ -->
+    <script src="<?php echo base_url('js/sparkline/jquery.sparkline.min.js') ?>"></script>
+    <script src="<?php echo base_url('js/sparkline/sparkline-active.js') ?>"></script>
+    <!-- flot JS
+		============================================ -->
+    <script src="<?php echo base_url('js/flot/jquery.flot.js') ?>"></script>
+    <script src="<?php echo base_url('js/flot/jquery.flot.resize.js') ?>"></script>
+    <script src="<?php echo base_url('js/flot/flot-active.js') ?>"></script>
+    <!-- knob JS
+		============================================ -->
+    <script src="<?php echo base_url('js/knob/jquery.knob.js') ?>"></script>
+    <script src="<?php echo base_url('js/knob/jquery.appear.js') ?>"></script>
+    <script src="<?php echo base_url('js/knob/knob-active.js') ?>"></script>
+                                                    <!-- INPUT MASK JS -->
+    <script src="<?php echo base_url('js/jasny-bootstrap.min.js') ?>"></script>
+                                                    <!-- BOOTSTRAP SELECT JS -->
+    <script src="<?php echo base_url('js/bootstrap-select/bootstrap-select.js') ?>"></script>
+                                                    <!-- DATEPICKER JS -->
+    <script src="<?php echo base_url('js/datapicker/bootstrap-datepicker.js') ?>"></script>
+    <script src="<?php echo base_url('js/datapicker/datepicker-active.js') ?>"></script>
+                                                    <!-- DROPZONE JS -->
+    <script src="<?php echo base_url('js/dropzone/dropzone.js') ?>"></script>
+    <!-- icheck JS
+		============================================ -->
+    <script src="<?php echo base_url('js/icheck/icheck.min.js') ?>"></script>
+    <script src="<?php echo base_url('js/icheck/icheck-active.js') ?>"></script>
+    <!--  wave JS
+		============================================ -->
+    <script src="<?php echo base_url('js/wave/waves.min.js') ?>"></script>
+    <script src="<?php echo base_url('js/wave/wave-active.js') ?>"></script>
+    <!--  Chat JS
+		============================================ -->
+    <script src="<?php echo base_url('js/chat/jquery.chat.js') ?>"></script>
+    <!--  todo JS
+		============================================ -->
+    <script src="<?php echo base_url('js/todo/jquery.todo.js') ?>"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="<?php echo base_url('js/plugins.js') ?>"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="<?php echo base_url('js/main.js') ?>"></script>
+	<!-- tawk chat JS
+		============================================ -->
+    <script src="<?php echo base_url('js/tawk-chat.js') ?>"></script>
 </body>
 
 </html>
