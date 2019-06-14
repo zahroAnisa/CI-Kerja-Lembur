@@ -7,45 +7,11 @@
     <title>Add Task | KLTime - Admin KLTime Jayapura</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-                                                    <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('img/favicon.ico') ?>">
-                                                    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
-                                                    <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.min.css') ?>">
-                                                    <!-- FONT AWESOME CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/font-awesome.min.css') ?>">
-                                                    <!-- OWL.CAROUSEL CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/owl.carousel.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('css/owl.theme.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('css/owl.transitions.css') ?>">
-                                                    <!-- MEANMENU CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/meanmenu/meanmenu.min.css') ?>">
-                                                    <!-- ANIMATE CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/animate.css') ?>">
-                                                    <!-- NORMALIZE CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/normalize.css') ?>">
-                                                    <!-- MCUSTOMERSCROLLBAR CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/scrollbar/jquery.mCustomScrollbar.min.css') ?>">
-                                                    <!-- NOTIKA ICON CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/notika-custom-icon.css') ?>">
-                                                    <!-- BOOTSTRAP SELECT CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/bootstrap-select/bootstrap-select.css') ?>">
-                                                    <!-- DATEPICKER CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/datapicker/datepicker3.css') ?>">
-                                                    <!-- DROPZONE CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/dropzone/dropzone.css') ?>">
-                                                    <!-- WAVE CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/wave/waves.min.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('css/wave/button.css') ?>">
-                                                    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/main.css') ?>">
-                                                    <!-- STYLE CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('style.css') ?>">
-                                                    <!-- RESPONSIVE CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/responsive.css') ?>">
-                                                    <!-- MODERNIZR JS -->
-    <script src="<?php echo base_url('js/vendor/modernizr-2.8.3.min.js') ?>"></script>
+    
+                                            <!-- START STYLESHEET -->
+                                    <?php include 'stylesheet/stylesheet.php'; ?>
+                                            <!-- END STYLESHEET -->
+
 </head>
 
 <body>
@@ -169,53 +135,9 @@
     </div>
 </div>
                                                 <!-- END MENU MOBILE -->
-    <!-- START MENU WEB-->
+                                                <!-- START MENU WEB-->
                                                 <!-- TAB MENU START-->
-<div class="main-menu-area mg-tb-40">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <!-- START MAIN TAB -->
-                <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                    <!-- START TAB HOME -->
-                    <li class="active"><a data-toggle="tab" href="#Home"><i class="notika-icon notika-house"></i> Home</a>
-                    </li>
-                    <!-- END TAB HOME -->
-                    <!-- START TAB USER -->
-                    <li><a data-toggle="tab" href="#User"><i class="notika-icon notika-support"></i> User</a>
-                    </li>
-                    <!-- END TAB USER -->
-                    <!-- START TAB TASK -->
-                    <li><a data-toggle="tab" href="#Task"><i class="notika-icon notika-form"></i> Task</a>
-                    </li>
-                    <!-- END TAB TASK -->
-                </ul>
-                <!-- END MAIN TAB -->
-                <!-- START SUB TAB -->
-                <div class="tab-content custom-menu-content">
-                    <!-- START TAB MENU HOME -->
-                    <div id="Home" class="tab-pane in active notika-tab-menu-bg animated flipInX">
-                    </div>
-                    <!-- END TAB MENU HOME -->
-                    <div id="User" class="tab-pane notika-tab-menu-bg animated flipInX">
-                        <ul class="notika-main-menu-dropdown">
-                            <li><a href="">Add Information User</a></li>
-                            <li><a href="">View Information User</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div id="Task" class="tab-pane notika-tab-menu-bg animated flipInX">
-                        <ul class="notika-main-menu-dropdown">
-                            <li><a href="">Add Task</a></li>
-                            <li><a href="">View Task</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- END SUB TAB -->
-        </div>
-    </div>
-</div>
+                                    <?php include 'menu/menu_tab.php'; ?>                                           
                                                 <!-- END MENU WEB-->
                                                 <!-- TAB MENU END-->
 
@@ -258,94 +180,12 @@
     </div>
                                                 <!-- START INDEX HOME -->                                                
                                                 <!-- START FOOTER -->
-<div class="footer-copyright-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="footer-copy-right">
-                    <p>Copyright © 2019
-                        . All rights reserved. <a href="">KL Time Jayapura</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                                    <?php include 'menu/footer.php'; ?>
                                                 <!-- END FOOTER-->
 
                                                 <!-- START JQUERY -->
-<script src="<?php echo base_url('js/vendor/jquery-1.12.4.min.js') ?>"></script>
-                                                <!-- BOOTSTRAP JS -->
-<script src="<?php echo base_url('js/bootstrap.min.js') ?>"></script>
-    <script src="<?php echo base_url('js/vendor/jquery-1.12.4.min.js') ?>"></script>
-    <!-- wow JS
-		============================================ -->
-    <script src="<?php echo base_url('js/wow.min.js') ?>"></script>
-    <!-- price-slider JS
-		============================================ -->
-    <script src="<?php echo base_url('js/jquery-price-slider.js') ?>"></script>
-    <!-- owl.carousel JS
-		============================================ -->
-    <script src="<?php echo base_url('js/owl.carousel.min.js') ?>"></script>
-    <!-- scrollUp JS
-		============================================ -->
-    <script src="<?php echo base_url('js/jquery.scrollUp.min.js') ?>"></script>
-    <!-- meanmenu JS
-		============================================ -->
-    <script src="<?php echo base_url('js/meanmenu/jquery.meanmenu.js') ?>"></script>
-    <!-- counterup JS
-		============================================ -->
-    <script src="<?php echo base_url('js/counterup/jquery.counterup.min.js') ?>"></script>
-    <script src="<?php echo base_url('js/counterup/waypoints.min.js') ?>"></script>
-    <script src="<?php echo base_url('js/counterup/counterup-active.js') ?>"></script>
-    <!-- mCustomScrollbar JS
-		============================================ -->
-    <script src="<?php echo base_url('js/scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
-    <!-- sparkline JS
-		============================================ -->
-    <script src="<?php echo base_url('js/sparkline/jquery.sparkline.min.js') ?>"></script>
-    <script src="<?php echo base_url('js/sparkline/sparkline-active.js') ?>"></script>
-    <!-- flot JS
-		============================================ -->
-    <script src="<?php echo base_url('js/flot/jquery.flot.js') ?>"></script>
-    <script src="<?php echo base_url('js/flot/jquery.flot.resize.js') ?>"></script>
-    <script src="<?php echo base_url('js/flot/flot-active.js') ?>"></script>
-    <!-- knob JS
-		============================================ -->
-    <script src="<?php echo base_url('js/knob/jquery.knob.js') ?>"></script>
-    <script src="<?php echo base_url('js/knob/jquery.appear.js') ?>"></script>
-    <script src="<?php echo base_url('js/knob/knob-active.js') ?>"></script>
-                                                    <!-- INPUT MASK JS -->
-    <script src="<?php echo base_url('js/jasny-bootstrap.min.js') ?>"></script>
-                                                    <!-- BOOTSTRAP SELECT JS -->
-    <script src="<?php echo base_url('js/bootstrap-select/bootstrap-select.js') ?>"></script>
-                                                    <!-- DATEPICKER JS -->
-    <script src="<?php echo base_url('js/datapicker/bootstrap-datepicker.js') ?>"></script>
-    <script src="<?php echo base_url('js/datapicker/datepicker-active.js') ?>"></script>
-                                                    <!-- DROPZONE JS -->
-    <script src="<?php echo base_url('js/dropzone/dropzone.js') ?>"></script>
-    <!-- icheck JS
-		============================================ -->
-    <script src="<?php echo base_url('js/icheck/icheck.min.js') ?>"></script>
-    <script src="<?php echo base_url('js/icheck/icheck-active.js') ?>"></script>
-    <!--  wave JS
-		============================================ -->
-    <script src="<?php echo base_url('js/wave/waves.min.js') ?>"></script>
-    <script src="<?php echo base_url('js/wave/wave-active.js') ?>"></script>
-    <!--  Chat JS
-		============================================ -->
-    <script src="<?php echo base_url('js/chat/jquery.chat.js') ?>"></script>
-    <!--  todo JS
-		============================================ -->
-    <script src="<?php echo base_url('js/todo/jquery.todo.js') ?>"></script>
-    <!-- plugins JS
-		============================================ -->
-    <script src="<?php echo base_url('js/plugins.js') ?>"></script>
-    <!-- main JS
-		============================================ -->
-    <script src="<?php echo base_url('js/main.js') ?>"></script>
-	<!-- tawk chat JS
-		============================================ -->
-    <script src="<?php echo base_url('js/tawk-chat.js') ?>"></script>
+                                    <?php include 'javascript/javascript.php'; ?>
+                                                <!-- END JQUERY -->
 </body>
 
 </html>

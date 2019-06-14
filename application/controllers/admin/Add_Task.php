@@ -10,6 +10,6 @@ class Overview extends  CI_Controller
 
     public function index()
     {
-        $this->load->view("admin/add_task");
+        $this->load->view('admin/add_task');
     }
 }

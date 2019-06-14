@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR EXIT ('no direct access');
 
-class Overview extends  CI_Controller
+class Add_User extends  CI_Controller
 {
     public function  __construct()
     {
@@ -10,6 +10,6 @@ class Overview extends  CI_Controller
 
     public function index()
     {
-        $this->load->view("admin/add_user");
+        $this->load->view('admin/add_user');
     }
 }
