@@ -20,7 +20,7 @@ class Auth extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('admin/add_task');
+		$this->load->view('admin/overview');
 	}
 
 	public function newUser()

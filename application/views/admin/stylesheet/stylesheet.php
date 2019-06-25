@@ -35,5 +35,7 @@
     <link rel="stylesheet" href="<?php echo base_url('style.css') ?>">
                                                     <!-- RESPONSIVE CSS -->
     <link rel="stylesheet" href="<?php echo base_url('css/responsive.css') ?>">
+                                                    <!-- DATA TABLE CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/jquery.dataTables.min.css') ?>">
                                                     <!-- MODERNIZR JS -->
     <script src="<?php echo base_url('js/vendor/modernizr-2.8.3.min.js') ?>"></script>

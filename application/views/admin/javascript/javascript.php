@@ -1,73 +1,59 @@
-<script src="<?php echo base_url('js/vendor/jquery-1.12.4.min.js') ?>"></script>
-                                                <!-- BOOTSTRAP JS -->
-<script src="<?php echo base_url('js/bootstrap.min.js') ?>"></script>
     <script src="<?php echo base_url('js/vendor/jquery-1.12.4.min.js') ?>"></script>
-    <!-- wow JS
-		============================================ -->
+                                                <!-- BOOTSTRAP JS -->
+    <script src="<?php echo base_url('js/bootstrap.min.js') ?>"></script>
+    <script src="<?php echo base_url('js/vendor/jquery-1.12.4.min.js') ?>"></script>
+                                                <!-- WOW JS -->
     <script src="<?php echo base_url('js/wow.min.js') ?>"></script>
-    <!-- price-slider JS
-		============================================ -->
+                                                <!-- PRICE SLIDER JS -->
     <script src="<?php echo base_url('js/jquery-price-slider.js') ?>"></script>
-    <!-- owl.carousel JS
-		============================================ -->
+                                                <!-- OWL CAROUSEL JS -->
     <script src="<?php echo base_url('js/owl.carousel.min.js') ?>"></script>
-    <!-- scrollUp JS
-		============================================ -->
+                                                <!-- SCROLL UP JS -->
     <script src="<?php echo base_url('js/jquery.scrollUp.min.js') ?>"></script>
-    <!-- meanmenu JS
-		============================================ -->
+                                                <!-- MEANMENU JS -->
     <script src="<?php echo base_url('js/meanmenu/jquery.meanmenu.js') ?>"></script>
-    <!-- counterup JS
-		============================================ -->
+                                                <!-- COUNTERUP JS -->
     <script src="<?php echo base_url('js/counterup/jquery.counterup.min.js') ?>"></script>
     <script src="<?php echo base_url('js/counterup/waypoints.min.js') ?>"></script>
     <script src="<?php echo base_url('js/counterup/counterup-active.js') ?>"></script>
-    <!-- mCustomScrollbar JS
-		============================================ -->
+                                                <!-- MCUSTOMSCROLLBAR JS -->
     <script src="<?php echo base_url('js/scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
-    <!-- sparkline JS
-		============================================ -->
+                                                <!-- SPARKLINE JS -->
     <script src="<?php echo base_url('js/sparkline/jquery.sparkline.min.js') ?>"></script>
     <script src="<?php echo base_url('js/sparkline/sparkline-active.js') ?>"></script>
-    <!-- flot JS
-		============================================ -->
+                                                <!-- FLOT JS -->
     <script src="<?php echo base_url('js/flot/jquery.flot.js') ?>"></script>
     <script src="<?php echo base_url('js/flot/jquery.flot.resize.js') ?>"></script>
     <script src="<?php echo base_url('js/flot/flot-active.js') ?>"></script>
-    <!-- knob JS
-		============================================ -->
+                                                <!-- KNOB JS -->
     <script src="<?php echo base_url('js/knob/jquery.knob.js') ?>"></script>
     <script src="<?php echo base_url('js/knob/jquery.appear.js') ?>"></script>
     <script src="<?php echo base_url('js/knob/knob-active.js') ?>"></script>
-                                                    <!-- INPUT MASK JS -->
+                                                <!-- INPUT MASK JS -->
     <script src="<?php echo base_url('js/jasny-bootstrap.min.js') ?>"></script>
-                                                    <!-- BOOTSTRAP SELECT JS -->
+                                                <!-- BOOTSTRAP SELECT JS -->
     <script src="<?php echo base_url('js/bootstrap-select/bootstrap-select.js') ?>"></script>
-                                                    <!-- DATEPICKER JS -->
+                                                <!-- DATEPICKER JS -->
     <script src="<?php echo base_url('js/datapicker/bootstrap-datepicker.js') ?>"></script>
     <script src="<?php echo base_url('js/datapicker/datepicker-active.js') ?>"></script>
-                                                    <!-- DROPZONE JS -->
+                                                <!-- DROPZONE JS -->
     <script src="<?php echo base_url('js/dropzone/dropzone.js') ?>"></script>
-    <!-- icheck JS
-		============================================ -->
+                                                <!-- ICHECK JS -->
     <script src="<?php echo base_url('js/icheck/icheck.min.js') ?>"></script>
     <script src="<?php echo base_url('js/icheck/icheck-active.js') ?>"></script>
-    <!--  wave JS
-		============================================ -->
+                                                <!-- WAVE JS -->
     <script src="<?php echo base_url('js/wave/waves.min.js') ?>"></script>
     <script src="<?php echo base_url('js/wave/wave-active.js') ?>"></script>
-    <!--  Chat JS
-		============================================ -->
+                                                <!-- CHAT JS -->
     <script src="<?php echo base_url('js/chat/jquery.chat.js') ?>"></script>
-    <!--  todo JS
-		============================================ -->
+                                                <!-- TODO JS -->
     <script src="<?php echo base_url('js/todo/jquery.todo.js') ?>"></script>
-    <!-- plugins JS
-		============================================ -->
+                                                <!-- PLUGINS JS -->
     <script src="<?php echo base_url('js/plugins.js') ?>"></script>
-    <!-- main JS
-		============================================ -->
+                                                <!-- MAIN JS -->
     <script src="<?php echo base_url('js/main.js') ?>"></script>
-	<!-- tawk chat JS
-		============================================ -->
+                                                <!-- TAWK CHAT JS -->
     <script src="<?php echo base_url('js/tawk-chat.js') ?>"></script>
+                                                <!-- DATA TABLE JS -->
+    <script src="<?php echo base_url('js/data-table/jquery.dataTables.min.js') ?>"></script>
+    <script src="<?php echo base_url('js/data-table/data-table-act.js') ?>"></script>
