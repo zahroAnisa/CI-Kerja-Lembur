@@ -57,3 +57,13 @@
                                                 <!-- DATA TABLE JS -->
     <script src="<?php echo base_url('js/data-table/jquery.dataTables.min.js') ?>"></script>
     <script src="<?php echo base_url('js/data-table/data-table-act.js') ?>"></script>
+                                                <!-- CHOSEN JS -->
+    <script src="<?php echo base_url('js/chosen/chosen.jquery.js') ?>"></script>
+
+     <script>
+      //custom select box
+
+      $(function(){
+          $('select.styled').customSelect();
+      });
+    </script>

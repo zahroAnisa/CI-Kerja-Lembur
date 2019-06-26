@@ -6,22 +6,6 @@
                         <div class="cmp-tb-hd cmp-int-hd">
                             <h2>Add Information User</h2>
                         </div>
-                        <!-- START FORM NAME -->
-                        <div class="form-example-int form-horizental">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
-                                        <label class="hrzn-fm">Full Name</label>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                        <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Input Name">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END FORM NAME -->
                         <!-- START FORM NIPEG -->
                         <div class="form-example-int form-horizental">
                             <div class="form-group">
@@ -38,7 +22,23 @@
                             </div>
                         </div>
                         <!-- END FORM NIPEG -->
-                        <!-- START FORM DTAE OF BIRTH -->
+                        <!-- START FORM NAME -->
+                        <div class="form-example-int form-horizental">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                        <label class="hrzn-fm">Full Name</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="nk-int-st">
+                                            <input type="text" class="form-control input-sm" placeholder="Input Name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END FORM NAME -->
+                        <!-- START FORM DATE OF BIRTH -->
                         <div class="form-example-int form-horizental">
                             <div class="form-group">
                                 <div class="row">
@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- END FORM DTAE OF BIRTH -->
+                        <!-- END FORM DATE OF BIRTH -->
                         <!-- START FORM ADDRESS -->
                         <div class="form-example-int form-horizental">
                             <div class="form-group">
@@ -79,12 +79,12 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="nk-int-mk sl-dp-mn">
-                                            <div class="bootstrap-select fm-cmp-mg">
-                                                <select class="selectpicker" title="-- Select gender --">
-                                                    <option>Male</option>
-                                                    <option>Female</option>
-                                                </select>
-                                            </div>
+                                           
+                                            <select class="form-control" title="-- Select gender --">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                           
                                         </div>
                                     </div>
                                 </div>

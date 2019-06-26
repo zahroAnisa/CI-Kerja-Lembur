@@ -10,6 +10,7 @@
     
                                             <!-- START STYLESHEET -->
                                     <?php include 'stylesheet/stylesheet.php'; ?>
+                            <?php include 'stylesheet/lock_screen_stylesheet.php'; ?>
                                             <!-- END STYLESHEET -->
 
 </head>
@@ -29,7 +30,7 @@
 
                                             <!-- START MENU WEB-->
                                             <!-- TAB MENU START-->
-                                    <?php include 'menu/menu_tab.php'; ?>     
+                                    <?php include 'menu/menu_tab_overtime.php'; ?>     
                                             <!-- END MENU WEB-->
                                             <!-- TAB MENU END-->
 
@@ -42,6 +43,7 @@
 
                                             <!-- START JQUERY -->
                                     <?php include 'javascript/javascript.php'; ?>
+                            <?php include 'javascript/lock_screen_javascript.php'; ?>
                                             <!-- END JQUERY -->
 </body>
 

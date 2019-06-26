@@ -37,5 +37,18 @@
     <link rel="stylesheet" href="<?php echo base_url('css/responsive.css') ?>">
                                                     <!-- DATA TABLE CSS -->
     <link rel="stylesheet" href="<?php echo base_url('css/jquery.dataTables.min.css') ?>">
+                                                    <!-- SUMMERNOTE CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/summernote/summernote.css') ?>">
+                                                    <!-- RANGE SLIDER CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/themesaller-forms.css') ?>">
+                                                    <!-- COLOR PICKER CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/color-picker/farbtastic.css')
+     ?>">
+                                                    <!-- NOTIFICATION CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/notification/notification.css')?>">
+
+    <link rel="stylesheet" href="<?php echo base_url('css/chosen/chosen.css') ?>">
+                                                    <!-- CDROPZONE CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/dropzone/dropzone.css')?>">
                                                     <!-- MODERNIZR JS -->
     <script src="<?php echo base_url('js/vendor/modernizr-2.8.3.min.js') ?>"></script>

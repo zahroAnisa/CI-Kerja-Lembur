@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Data User | KLTime - Admin KLTime Jayapura</title>
+    <title>Dashboard | KLTime - Admin KLTime Jayapura</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -30,7 +30,7 @@
 
                                             <!-- START MENU WEB-->
                                             <!-- TAB MENU START-->
-                                    <?php include 'menu/menu_tab.php'; ?>     
+                                    <?php include 'menu/menu_tab_home.php'; ?>     
                                             <!-- END MENU WEB-->
                                             <!-- TAB MENU END-->
 

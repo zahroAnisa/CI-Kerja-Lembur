@@ -23,8 +23,28 @@ class Auth extends CI_Controller {
 		$this->load->view('admin/overview');
 	}
 
-	public function newUser()
+	public function addUser()
 	{
 		$this->load->view('admin/add_user');
+	}
+
+	public function viewUser()
+	{
+		$this->load->view('admin/data_user');
+	}
+
+	public function addTask()
+	{
+		$this->load->view('admin/add_task');
+	}
+
+	public function viewTask()
+	{
+		$this->load->view('admin/data_task');
+	}
+
+	public function workOvertime()
+	{
+		$this->load->view('admin/work_overtime');
 	}
 }

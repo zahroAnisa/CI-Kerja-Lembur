@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
                                             <!-- START STYLESHEET -->
-                                    <?php include 'stylesheet/stylesheet.php'; ?>
+                                    <?php include 'stylesheet/styleku.php'; ?>
+                            <?php include 'stylesheet/lock_screen_stylesheet.php'; ?>
                                             <!-- END STYLESHEET -->
 </head>
 
@@ -27,7 +28,7 @@
 
                                             <!-- START MENU WEB-->
                                             <!-- TAB MENU START-->
-                                    <?php include 'menu/menu_tab.php'; ?>     
+                                    <?php include 'menu/menu_tab_user.php'; ?>     
                                             <!-- END MENU WEB-->
                                             <!-- TAB MENU END-->
 
@@ -39,8 +40,11 @@
                                             <!-- END FOOTER-->
 
                                             <!-- START JQUERY -->
-                                    <?php include 'javascript/javascript.php'; ?>
+                                    <?php include 'javascript/jsku.php'; ?>
+                            <?php include 'javascript/lock_screen_javascript.php'; ?>
                                             <!-- END JQUERY -->
+
+    
 </body>
 
 </html>
